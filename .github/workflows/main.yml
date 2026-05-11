@@ -132,7 +132,7 @@ jobs:
 
             if [ "$total" -gt 1 ]; then
               NUM=$(printf '%02d' $counter)
-              DL_NAME="${#PREFIX}_${NUM}_${FILENAME_BASE}"
+              DL_NAME="${#PREFIX}_${#NUM}_${FILENAME_BASE}"
             else
               DL_NAME="${#PREFIX}_${FILENAME_BASE}"
             fi
